@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
     <title>Searchoor</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 15%;
+      }
+      input { padding: 8px; width: 300px; }
+      button { padding: 8px 16px; }
+    </style>
   </head>
-  <body style="text-align:center; font-family:Arial, sans-serif;">
-    <h1>🔍 Welcome to Searchoor!</h1>
-    <p>A nonprofit, open-source search experiment.</p>
-
-    <form action="https://duckduckgo.com/">
-      <input type="text" name="q" placeholder="Search the web..." style="padding:8px; width:250px;">
-      <button type="submit" style="padding:8px;">Search</button>
+  <body>
+    <h1>🔍 Searchoor</h1>
+    <form action="https://searchoor-backend.onrender.com" method="get">
+      <input type="text" name="q" placeholder="Search...">
+      <button type="submit">Search</button>
     </form>
   </body>
 </html>
